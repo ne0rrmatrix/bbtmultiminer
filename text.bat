@@ -175,3 +175,4 @@ ECHO 80.  SGMiner - AMD Only - Monacoin to Miningpoolhub
 ECHO ****************************************************
 ECHO 99 - EXIT
 ECHO.
+ 
