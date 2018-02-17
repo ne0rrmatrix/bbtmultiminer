@@ -18,6 +18,7 @@ Change Log
 5.8
 * various bug fixes and updated Claymore Dual Miner to 11.0
 * coin adddresses now located in my_info.bat file
+
 5.7
 * Updated Claymore Ethereum Dual Miner to 10.2
 * Removed -di entry on ETN RX option, left in from testing in previous option
