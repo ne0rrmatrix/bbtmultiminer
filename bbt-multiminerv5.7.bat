@@ -229,49 +229,49 @@ pause
 
 :ethereum3
 ECHO AMD and NVIDIA Claymore - Eth Only Ethermine.org
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -allpools 1
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ethereum4
 ECHO AMD and NVIDIA Claymore - Eth Ethermine.org and Siacoin to Nanopool
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -dpool stratum+tcp://sia-us-east1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -dpool stratum+tcp://sia-us-east1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ethereum5
 ECHO AMD and NVIDIA Claymore - Eth Ethermine.org and Decred to CoinMine.pl
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -dpool dcr-us.coinmine.pl:2222 -dwal %DECRED_WALLET_ADDRESS% -dpsw %WORKER_PASSWORD% -allpools 1 
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -dpool dcr-us.coinmine.pl:2222 -dwal %DECRED_WALLET_ADDRESS% -dpsw %WORKER_PASSWORD% -allpools 1 
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ethereum6
 ECHO AMD and NVIDIA Claymore - Eth Ethermine.org and Lbry Credits to Coinmine.pl
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -dpool lbc-us.coinmine.pl:8787 -dwal %LBRY_WALLET_ADDRESS% -dpsw %WORKER_PASSWORD% -dcoin lbc
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -dpool lbc-us.coinmine.pl:8787 -dwal %LBRY_WALLET_ADDRESS% -dpsw %WORKER_PASSWORD% -dcoin lbc
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ethereum7
 ECHO AMD and NVIDIA Claymore - Eth Ethermine.org and PascalCoin to Nanopool
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -dpool stratum+tcp://pasc-us-east1.nanopool.org:15555 -dwal %PASCAL_WALLET_ADDRESS%.%MINER_NAME%/%EMAIL_ADDRESS% -dpsw %WORKER_PASSWORD% -dcoin pasc -ftime 10 
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool us1.ethermine.org:4444 -ewal %ETH_WALLET_ADDRESS%.%MINER_NAME% -epsw %WORKER_PASSWORD% -dpool stratum+tcp://pasc-us-east1.nanopool.org:15555 -dwal %PASCAL_WALLET_ADDRESS%.%MINER_NAME%/%EMAIL_ADDRESS% -dpsw %WORKER_PASSWORD% -dcoin pasc -ftime 10 
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ethereum8
 ECHO AMD and NVIDIA Claymore - Eth Nanopool Only
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool eth-us-east1.nanopool.org:9999 -ewal %ETH_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -mode 1
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool eth-us-east1.nanopool.org:9999 -ewal %ETH_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -mode 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ethereum9
 ECHO AMD and NVIDIA Claymore - Nanopool and Siacoin to Nanopool
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool eth-us-east1.nanopool.org:9999 -ewal %ETH_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw %WORKER_PASSWORD% -dpool stratum+tcp://sia-us-east1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool eth-us-east1.nanopool.org:9999 -ewal %ETH_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw %WORKER_PASSWORD% -dpool stratum+tcp://sia-us-east1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ethereum10
 ECHO AMD and NVIDIA Claymore - Eth Nanopool and Pascal to Nanopool
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool eth-us-east1.nanopool.org:9999 -ewal %ETH_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw %WORKER_PASSWORD% -dpool stratum+tcp://pasc-us-east1.nanopool.org:15555 -dwal %PASCAL_WALLET_ADDRESS%.%MINER_NAME%/%EMAIL_ADDRESS% -dcoin pasc -ftime 10 
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool eth-us-east1.nanopool.org:9999 -ewal %ETH_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw %WORKER_PASSWORD% -dpool stratum+tcp://pasc-us-east1.nanopool.org:15555 -dwal %PASCAL_WALLET_ADDRESS%.%MINER_NAME%/%EMAIL_ADDRESS% -dcoin pasc -ftime 10 
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
@@ -286,19 +286,19 @@ pause
 
 :ethereumc2
 ECHO AMD and NVIDIA Claymore - Etc (ethereum classic) to Nanopool
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool etc-us-east1.nanopool.org:19999 -ewal %ETC_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -mode 1 -allpools 1 
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool etc-us-east1.nanopool.org:19999 -ewal %ETC_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -mode 1 -allpools 1 
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ethereumc3
 ECHO AMD and NVIDIA Claymore - Etc (ethereum classic) and Siacoin both to Nanopool
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool etc-us-east1.nanopool.org:19999 -ewal %ETC_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw %WORKER_PASSWORD% -dpool stratum+tcp://sia-us-east1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia -allpools 1 
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool etc-us-east1.nanopool.org:19999 -ewal %ETC_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw %WORKER_PASSWORD% -dpool stratum+tcp://sia-us-east1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia -allpools 1 
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ethereumc4
 ECHO AMD and NVIDIA Claymore - Etc (ethereum classic) Nanopool and Decred to Coinmine
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool etc-us-east1.nanopool.org:19999 -ewal %ETC_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw %WORKER_PASSWORD% -dpool dcr-us.coinmine.pl:2222 -dwal %DECRED_WALLET_ADDRESS% -dpsw %WORKER_PASSWORD% -allpools 1 
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool etc-us-east1.nanopool.org:19999 -ewal %ETC_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw %WORKER_PASSWORD% -dpool dcr-us.coinmine.pl:2222 -dwal %DECRED_WALLET_ADDRESS% -dpsw %WORKER_PASSWORD% -allpools 1 
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
@@ -412,25 +412,25 @@ pause
 ::
 :dbix1
 ECHO AMD and NVIDIA Claymore - Dbix to Sexy.pool only
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://dbix.pool.sexy:7007 -ewal %DBIX_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -allpools 1 -allcoins 1 -mode 1 
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://dbix.pool.sexy:7007 -ewal %DBIX_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -allpools 1 -allcoins 1 -mode 1 
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :dbix2
 ECHO AMD and NVIDIA Claymore - Dbix to Sexy.Pool and Siacoin to Nanopool
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://dbix.pool.sexy:7007 -ewal %DBIX_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool stratum+tcp://sia-us-east1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia -allpools 1
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://dbix.pool.sexy:7007 -ewal %DBIX_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool stratum+tcp://sia-us-east1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :dbix3
 ECHO AMD and NVIDIA Claymore - Dbix to Sexy.Pool and Decred to Coinmine.pl
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://dbix.pool.sexy:7007 -ewal %DBIX_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool dcr-us.coinmine.pl:2222 -dwal %DECRED_WALLET_ADDRESS%.%MINER_NAME% -dpsw x -allpools 1
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://dbix.pool.sexy:7007 -ewal %DBIX_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool dcr-us.coinmine.pl:2222 -dwal %DECRED_WALLET_ADDRESS%.%MINER_NAME% -dpsw x -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :dbix4
 ECHO AMD and NVIDIA Claymore - Dbix to Sexy.Pool and LBRY to Coinmine.pl
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://dbix.pool.sexy:7007 -ewal %DBIX_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool lbc-us.coinmine.pl:8787 -dwal %LBRY_WALLET_ADDRESS%.%MINER_NAME% -dpsw x -dcoin lbc -allpools 1
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://dbix.pool.sexy:7007 -ewal %DBIX_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool lbc-us.coinmine.pl:8787 -dwal %LBRY_WALLET_ADDRESS%.%MINER_NAME% -dpsw x -dcoin lbc -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
@@ -441,31 +441,31 @@ pause
 
 :ubiq2
 ECHO AMD and NVIDIA Claymore - Ubiq to Hodl Pool Only
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal %UBIQ_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -allpools 1 -allcoins 1 -mode 1 
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal %UBIQ_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -allpools 1 -allcoins 1 -mode 1 
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ubiq3
 ECHO AMD and NVIDIA Claymore - Ubiq to Hodl Pool and Decred to Coinmine.pl
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal %UBIQ_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool dcr-us.coinmine.pl:2222 -dwal %DECRED_WALLET_ADDRESS%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -allpools 1 
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal %UBIQ_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool dcr-us.coinmine.pl:2222 -dwal %DECRED_WALLET_ADDRESS%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -allpools 1 
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ubiq4
 ECHO AMD and NVIDIA Claymore - Ubiq to Hodl Pool and LBRY to Coinmine.pl
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal %UBIQ_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool stratum+tcp://lbc-us.coinmine.pl:8787 -dwal %LBRY_WALLET_ADDRESS%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -dcoin lbc -allpools 1
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal %UBIQ_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool stratum+tcp://lbc-us.coinmine.pl:8787 -dwal %LBRY_WALLET_ADDRESS%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -dcoin lbc -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ubiq5
 ECHO AMD and NVIDIA Claymore - Ubiq to Hodl Pool and PASC to Nanopool
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal %UBIQ_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool stratum+tcp://pasc-us-east1.nanopool.org:15555 -dwal %PASCAL_WALLET_ADDRESS%.%MINER_NAME%/%EMAIL_ADDRESS% -dcoin pasc -ftime 10 -allcoins 1
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal %UBIQ_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool stratum+tcp://pasc-us-east1.nanopool.org:15555 -dwal %PASCAL_WALLET_ADDRESS%.%MINER_NAME%/%EMAIL_ADDRESS% -dcoin pasc -ftime 10 -allcoins 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ubiq6
 ECHO AMD and NVIDIA Claymore - Ubiq to Hodl Pool and Siacoin to Nanopool
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal %UBIQ_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool stratum+tcp://sia-us-east1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia -allpools 1
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal %UBIQ_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -eworker %MINER_NAME% -dpool stratum+tcp://sia-us-east1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
@@ -475,7 +475,7 @@ pause
 
 :exp1
 ECHO AMD and NVIDIA Claymore - Expanse to Hodl Pool
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://exp.hodlpool.com:8003 -ewal %EXP_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -esm 0 -allcoins exp -allpools 1 
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://exp.hodlpool.com:8003 -ewal %EXP_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -esm 0 -allcoins exp -allpools 1 
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
@@ -532,31 +532,31 @@ pause
 
 :mus1
 ECHO AMD and NVIDIA Claymore - Musiccoin to miningpoolhub Pool Only
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://us-east.ethash-hub.miningpoolhub.com:20585 -ewal %MINER_WEBLOGIN%.%MINER_NAME% -epsw %WORKER_PASSWORD% -esm 2 -allcoins 1 -allpools 1 
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://us-east.ethash-hub.miningpoolhub.com:20585 -ewal %MINER_WEBLOGIN%.%MINER_NAME% -epsw %WORKER_PASSWORD% -esm 2 -allcoins 1 -allpools 1 
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :mus2
 ECHO AMD and NVIDIA Claymore - Musiccoin to miningpoolhub Pool and Siacoin to Nanopool
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://us-east.ethash-hub.miningpoolhub.com:20585 -ewal %MINER_WEBLOGIN%.%MINER_NAME% -epsw %WORKER_PASSWORD% -esm 2 -allcoins 1 -allpools 1 -dpool stratum+tcp://sia-us-east1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia -allpools 1
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://us-east.ethash-hub.miningpoolhub.com:20585 -ewal %MINER_WEBLOGIN%.%MINER_NAME% -epsw %WORKER_PASSWORD% -esm 2 -allcoins 1 -allpools 1 -dpool stratum+tcp://sia-us-east1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :mus3
 ECHO AMD and NVIDIA Claymore - Musiccoin to miningpoolhub Pool and Decred to Suprnova.cc Pool
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://us-east.ethash-hub.miningpoolhub.com:20585 -ewal %MINER_WEBLOGIN%.%MINER_NAME% -epsw %WORKER_PASSWORD% -esm 2 -allcoins 1 -allpools 1 -dpool dcr-us.coinmine.pl:2222 -dwal %DECRED_WALLET_ADDRESS%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -allpools 1
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://us-east.ethash-hub.miningpoolhub.com:20585 -ewal %MINER_WEBLOGIN%.%MINER_NAME% -epsw %WORKER_PASSWORD% -esm 2 -allcoins 1 -allpools 1 -dpool dcr-us.coinmine.pl:2222 -dwal %DECRED_WALLET_ADDRESS%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :mus4
 ECHO AMD and NVIDIA Claymore - Musiccoin to miningpoolhub Pool and LBRY to Coinmine.pl
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://us-east.ethash-hub.miningpoolhub.com:20585 -ewal %MINER_WEBLOGIN%.%MINER_NAME% -epsw %WORKER_PASSWORD% -esm 2 -allcoins 1 -allpools 1 -dpool stratum+tcp://lbc-us.coinmine.pl:8787 -dwal %LBRY_WALLET_ADDRESS%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -dcoin lbc
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://us-east.ethash-hub.miningpoolhub.com:20585 -ewal %MINER_WEBLOGIN%.%MINER_NAME% -epsw %WORKER_PASSWORD% -esm 2 -allcoins 1 -allpools 1 -dpool stratum+tcp://lbc-us.coinmine.pl:8787 -dwal %LBRY_WALLET_ADDRESS%.%MINER_NAME% -dpsw %WORKER_PASSWORD% -dcoin lbc
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :mus5
 ECHO AMD and NVIDIA Claymore - Musiccoin to miningpoolhub Pool and PASC to Nanopool
-Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://us-east.ethash-hub.miningpoolhub.com:20585 -ewal %MINER_WEBLOGIN%.%MINER_NAME% -epsw %WORKER_PASSWORD% -esm 2 -allcoins 1 -allpools 1 -dpool stratum+tcp://pasc-us-east1.nanopool.org:15555 -dwal %PASCAL_WALLET_ADDRESS%.%MINER_NAME%/%EMAIL_ADDRESS% -dcoin pasc -ftime 10 -allpools 1 
+Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://us-east.ethash-hub.miningpoolhub.com:20585 -ewal %MINER_WEBLOGIN%.%MINER_NAME% -epsw %WORKER_PASSWORD% -esm 2 -allcoins 1 -allpools 1 -dpool stratum+tcp://pasc-us-east1.nanopool.org:15555 -dwal %PASCAL_WALLET_ADDRESS%.%MINER_NAME%/%EMAIL_ADDRESS% -dcoin pasc -ftime 10 -allpools 1 
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
@@ -650,37 +650,37 @@ pause
 ::
 :pirl1
 ECHO AMD and NVIDIA Claymore - Pirl LESS THAN 100 MH/s Only minerpool.net
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://pirl.minerpool.net:8002 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://pirl.minerpool.net:8002 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :pirl2
 ECHO AMD and NVIDIA Claymore - Pirl 100 MH/s to 800 MH/s Only minerpool.net
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://pirl.minerpool.net:8004 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://pirl.minerpool.net:8004 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :pirl3
 ECHO AMD and NVIDIA Claymore - Pirl MORE THAN 800 MH/s Only minerpool.net
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://pirl.minerpool.net:8044 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://pirl.minerpool.net:8044 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :pirl4
 ECHO AMD and NVIDIA Claymore - Pirl LESS THAN 200 MH/s Only Cryptopools.info
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://pirl.Cryptopools.info:8002 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://pirl.Cryptopools.info:8002 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :pirl5
 ECHO AMD and NVIDIA Claymore - Pirl 200 MH/s to 800 MH/s Only Cryptopools.info
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://pirl.Cryptopools.info:8004 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://pirl.Cryptopools.info:8004 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :pirl6
 ECHO AMD and NVIDIA Claymore - Pirl MORE THAN 800 MH/s Only Cryptopools.info
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://pirl.Cryptopools.info:8008 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://pirl.Cryptopools.info:8008 -ewal %PIRL_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins exp -eworker %MINER_NAME%
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
@@ -690,37 +690,37 @@ pause
 
 :ella1
 ECHO AMD and NVIDIA Claymore - Ella LESS THAN 180 MH/s ellaismpool America Based
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://ellaismpool.com:8008 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://ellaismpool.com:8008 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ella2
 ECHO AMD and NVIDIA Claymore - Ella 100 MH/s to 800 MH/s ellaismpool America Based
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://ellaismpool.com:8004 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://ellaismpool.com:8004 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ella3
 ECHO AMD and NVIDIA Claymore - Ella MORE THAN 800 MH/s ellaismpool America Based
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://ellaismpool.com:8009 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://ellaismpool.com:8009 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ella4
 ECHO AMD and NVIDIA Claymore - Ella LESS THAN 180 MH/s cryptobitpool.eu Europe Based
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://ella.cryptobitpool.eu:8002 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://ella.cryptobitpool.eu:8002 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ella5
 ECHO AMD and NVIDIA Claymore - Ella 100 MH/s to 800 MH/s cryptobitpool.eu Europe Based
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://ella.cryptobitpool.eu:8003 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://ella.cryptobitpool.eu:8003 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ella6
 ECHO AMD and NVIDIA Claymore - Ella MORE THAN 800 MH/s cryptobitpool.eu Europe Based
-Miners\Claymore_Dual_Ethereum_v10.2\EthDcrMiner64.exe -epool stratum+tcp://ella.cryptobitpool.eu:8004 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
+Miners\Claymore_Dual_Ethereum_v11.0\EthDcrMiner64.exe -epool stratum+tcp://ella.cryptobitpool.eu:8004 -ewal %ELLA_WALLET_ADDRESS% -epsw %WORKER_PASSWORD% -allpools 1 -allcoins 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
