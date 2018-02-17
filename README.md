@@ -1,4 +1,5 @@
 # bbtmultiminer
+Forked by ne0rmatrix
 
 BBT MultiMiner is the official BitsBeTrippin MultiMiner Tool produced by BBT Carter.
 
@@ -12,10 +13,12 @@ Supported by donations and great viewers of www.youtube.com/c/bitsbetrippin
 - Cryptos supported:
 ETH,ETC,XMR,SIA,ZEC,PASC,HUSH,LBC,DCR,DBIX,UBQ,EXP,DGD,FTC,MUS,ZCL,ZEN,BTG,PIRL,ETN,VTC,KMD,ELLA,SUMO,KRB,MONA
 
-Latest Update v5.7
+Latest Update v5.8 alpha
 
 Change Log
-
+5.8
+* various bug fixes and updated Claymore Dual Miner to 11.0
+5.7
 * Updated Claymore Ethereum Dual Miner to 10.2
 * Removed -di entry on ETN RX option, left in from testing in previous option
 * Removed STAK-XMR Miner CPU & GPU as it was tossing false positive on antivirus
