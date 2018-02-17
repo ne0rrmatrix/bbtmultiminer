@@ -15,6 +15,7 @@ ETH,ETC,XMR,SIA,ZEC,PASC,HUSH,LBC,DCR,DBIX,UBQ,EXP,DGD,FTC,MUS,ZCL,ZEN,BTG,PIRL,
 Latest Update v5.8 alpha
 
 Change Log
+
 5.8
 * various bug fixes and updated Claymore Dual Miner to 11.0
 * coin adddresses now located in my_info.bat file
